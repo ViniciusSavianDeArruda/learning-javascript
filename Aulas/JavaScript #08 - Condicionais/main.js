@@ -1,5 +1,4 @@
 // Aula 08 — Condicionais
-// -----------------------
 // Nesta aula, aprendemos a:
 // - Usar estruturas condicionais (if, else if, else)
 // - Trabalhar com operadores lógicos (&& e ||)
@@ -8,9 +7,7 @@
 
 window.console.log("Eu sou o console!");
 
-// ---------------------------------------
 // IF / ELSE — Condições básicas
-// ---------------------------------------
 // `===` verifica valor e tipo (comparação estrita)
 // `==` verifica apenas o valor (comparação frouxa)
 
@@ -29,9 +26,7 @@ if (sum === "2") {
     console.log("Sum is NOT 2!");
 }
 
-// ---------------------------------------
 // ELSE IF — Múltiplas verificações
-// ---------------------------------------
 
 const summ = 1 + 2;
 
@@ -43,9 +38,7 @@ if (summ === 2) {
     console.log("Sum is NOT 2!");
 }
 
-// ---------------------------------------
 // OPERADORES LÓGICOS — && e ||
-// ---------------------------------------
 // `&&` → verdadeiro se TODAS as condições forem verdadeiras
 // `||` → verdadeiro se PELO MENOS uma condição for verdadeira
 
@@ -63,9 +56,7 @@ if (sum1 === 4 || sum2 === 6) {
     console.log("sum1 is 4 or sum2 is 6");
 }
 
-// ---------------------------------------
 // OPERADOR TERNÁRIO
-// ---------------------------------------
 // É uma forma curta de escrever um if/else simples.
 
 const sum3 = 1 + 2;
@@ -84,9 +75,7 @@ if (sum3 === 2) {
 let number = sum3 === 2 ? 2 : 4;
 console.log(number);
 
-// ---------------------------------------
 // SWITCH
-// ---------------------------------------
 // O switch compara o valor de uma variável com vários casos possíveis.
 // É útil para múltiplas condições baseadas em igualdade.
 

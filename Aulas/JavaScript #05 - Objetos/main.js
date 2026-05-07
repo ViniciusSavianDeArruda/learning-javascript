@@ -1,5 +1,4 @@
 // Aula 05 — Objetos
-// ------------------
 // Nesta aula, aprendemos:
 // - Como criar e acessar objetos
 // - Como adicionar propriedades
@@ -8,9 +7,7 @@
 
 window.console.log("Eu sou o console!");
 
-// ---------------------------------------
 // CRIAÇÃO DE OBJETOS
-// ---------------------------------------
 // Um objeto armazena dados em pares de chave e valor.
 // Cada chave (propriedade) representa uma característica do objeto.
 
@@ -25,9 +22,7 @@ const person = {
     }
 };
 
-// ---------------------------------------
 // ACESSANDO PROPRIEDADES
-// ---------------------------------------
 
 const read = person.hobbies[2]; // acessa o terceiro hobby
 console.log(read); // atuar
@@ -35,9 +30,7 @@ console.log(read); // atuar
 console.log(person.dog.age);  // 4
 console.log(person.dog.name); // Simba
 
-// ---------------------------------------
 // DESTRUCTURING
-// ---------------------------------------
 // O Destructuring permite extrair várias propriedades de um objeto
 // de forma simplificada, sem precisar acessar uma a uma.
 
@@ -56,17 +49,13 @@ console.log(hobbies);      // ["cantar", "dançar", "atuar"]
 console.log(dogName);      // Simba
 console.log(person.dog.age); // 4
 
-// ---------------------------------------
 // ADICIONANDO NOVAS PROPRIEDADES AO OBJETO
-// ---------------------------------------
 // Podemos incluir novas propriedades diretamente.
 
 person.country = "Estados Unidos";
 console.log(person.country); // Estados Unidos
 
-// ---------------------------------------
 // LISTAS DE OBJETOS
-// ---------------------------------------
 // É comum ter uma lista (array) contendo vários objetos,
 // por exemplo, uma lista de tarefas.
 
@@ -88,9 +77,7 @@ const todos = [
     },
 ];
 
-// ---------------------------------------
 // ACESSANDO ITENS EM UMA LISTA DE OBJETOS
-// ---------------------------------------
 
 // Acessa o terceiro objeto da lista
 const descriptionOfLastTodo = todos[2];

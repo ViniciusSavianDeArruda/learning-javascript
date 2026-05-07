@@ -1,14 +1,11 @@
 // Aula 03 — Listas (Arrays)
-// --------------------------
 // Nesta aula, aprendemos a trabalhar com listas (arrays) no JavaScript.
 // Arrays armazenam múltiplos valores em uma única variável.
 
 // Exemplo básico
 window.console.log("Eu sou o console!");
 
-// ---------------------------------------
 // Criação de um array
-// ---------------------------------------
 
 const names = ["Maria", "Francisca", "Joana", 10, false];
 
@@ -19,9 +16,8 @@ const names = ["Maria", "Francisca", "Joana", 10, false];
 const chica = names[1];
 console.log(chica); // Francisca
 
-// ---------------------------------------
+
 // Métodos de adição e remoção
-// ---------------------------------------
 
 // Adiciona um valor ao final da lista
 names.push("Joaquim");
@@ -39,9 +35,8 @@ console.log(names);
 names.pop();
 console.log(names);
 
-// ---------------------------------------
+
 // Alterando e localizando valores
-// ---------------------------------------
 
 // Altera o valor na posição 3
 names[3] = "Ana";
@@ -50,9 +45,7 @@ console.log(names);
 // Retorna o índice (posição) do elemento "Joaquim"
 console.log(names.indexOf("Joaquim"));
 
-// ---------------------------------------
 // Ordenando e analisando o array
-// ---------------------------------------
 
 // Ordena a lista em ordem alfabética
 const sortedNames = names.sort();

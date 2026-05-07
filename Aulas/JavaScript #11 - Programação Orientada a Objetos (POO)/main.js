@@ -1,5 +1,4 @@
 // Aula 11 — Classes e Herança
-// -----------------------------
 // Nesta aula, aprendemos:
 // - Como criar classes em JavaScript
 // - Como usar construtores e métodos
@@ -8,9 +7,7 @@
 
 window.console.log("Eu sou o console!");
 
-// ---------------------------------------
 // 1) CLASSES E CONSTRUTOR
-// ---------------------------------------
 // Uma classe é um modelo (molde) para criar objetos com propriedades e métodos.
 // O método `constructor()` é chamado automaticamente ao criar uma nova instância da classe.
 
@@ -42,9 +39,7 @@ person.getFullName();
 // Chamando um método estático (diretamente da classe)
 Person.sayHello();
 
-// ---------------------------------------
 // 2) HERANÇA ENTRE CLASSES
-// ---------------------------------------
 // Herança permite que uma classe (filha) herde atributos e métodos de outra (pai).
 
 class Animal {

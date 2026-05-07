@@ -1,5 +1,4 @@
 // Aula 13 — Manipulando Elementos do DOM
-// ---------------------------------------
 // Nesta aula, aprendemos a:
 // - Remover elementos do DOM
 // - Modificar texto e conteúdo HTML de elementos
@@ -7,9 +6,7 @@
 
 window.console.log("Eu sou o console!");
 
-// ---------------------------------------
 // 1) REMOVER ELEMENTOS
-// ---------------------------------------
 // querySelector() seleciona o primeiro elemento que corresponde ao seletor informado.
 // Aqui, selecionamos o elemento <ul> com a classe .items.
 
@@ -26,23 +23,17 @@ items.firstElementChild.remove();
 items.lastElementChild.remove();
 */
 
-// ---------------------------------------
 // 2) MODIFICAR TEXTO DE ELEMENTOS
-// ---------------------------------------
 // Podemos acessar elementos específicos da lista usando `children[index]`.
 
 items.children[0].textContent = "Item UM"; // modifica o primeiro <li>
 
-// ---------------------------------------
 // 3) INSERIR HTML DENTRO DE UM ELEMENTO
-// ---------------------------------------
 // innerHTML substitui o conteúdo interno de um elemento por HTML novo.
 
 items.lastElementChild.innerHTML = "<h1>Hello world!</h1>";
 
-// ---------------------------------------
 // 4) MODIFICAR ESTILOS COM JAVASCRIPT
-// ---------------------------------------
 // É possível alterar estilos diretamente pela propriedade `style`.
 // Essa abordagem altera apenas o elemento selecionado e não o CSS global.
 

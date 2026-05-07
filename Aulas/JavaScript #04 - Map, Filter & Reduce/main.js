@@ -1,5 +1,4 @@
 // Aula 04 — Map, Filter e Reduce
-// -------------------------------
 // Nesta aula, aprendemos três métodos fundamentais dos arrays:
 // - map()     → transforma cada item de uma lista e retorna uma nova lista
 // - filter()  → filtra elementos de uma lista com base em uma condição
@@ -7,9 +6,7 @@
 
 window.console.log("Eu sou o console!");
 
-// ---------------------------------------
 // MAP
-// ---------------------------------------
 // O método map() executa uma função em cada item da lista e
 // retorna uma nova lista com os resultados.
 
@@ -21,9 +18,7 @@ const numbersMultipliedByTwo = numbers.map(function (number) {
 
 console.log(numbersMultipliedByTwo); // [2, 4, 6, 8, 10]
 
-// ---------------------------------------
 // FILTER
-// ---------------------------------------
 // O método filter() cria uma nova lista contendo apenas
 // os elementos que atendem a uma condição.
 
@@ -36,9 +31,7 @@ const evenAges = ages.filter(function(age) {
 
 console.log(evenAges); // [8, 30, 22, 40]
 
-// ---------------------------------------
 // REDUCE
-// ---------------------------------------
 // O método reduce() reduz um array a um único valor,
 // aplicando uma função acumuladora a cada elemento.
 

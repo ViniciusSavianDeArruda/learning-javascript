@@ -1,18 +1,15 @@
-// 🧠 Aula 02 — Variáveis & Tipos de Dados
-// ---------------------------------------
+// Aula 02 — Variáveis & Tipos de Dados
 // Nesta aula, aprendemos sobre:
 // - Declaração de variáveis (const e let)
 // - Strings e seus métodos
 // - Números e conversões
 // - Booleanos, null e undefined
 
-// 🔍 Exemplo básico: usando o console
+// Exemplo básico: usando o console
 window.console.log("Eu sou o console!");
 
-// ---------------------------------------
-//  VARIÁVEIS: const e let
-// ---------------------------------------
 
+//  VARIÁVEIS: const e let
 // `const` é usado para valores que não mudam.
 // `let` é usado para valores que podem ser alterados.
 
@@ -25,10 +22,7 @@ let message = 'Hello world';
 message = 'Olá mundo!';
 alert(message);
 
-// ---------------------------------------
 //  STRINGS
-// ---------------------------------------
-
 const greeting = 'Hello world!';
 console.log("Quantidade de caracteres:", greeting.length);
 
@@ -49,10 +43,7 @@ console.log(names.split(",")); // separa pelos espaços após vírgulas
 const name = "Maria";
 console.log(name.split("")); // separa cada caractere
 
-// ---------------------------------------
 //  NÚMEROS
-// ---------------------------------------
-
 const number = 5;
 console.log("Número vezes 2:", number * 2);
 
@@ -63,16 +54,12 @@ console.log("Convertido para string:", number.toString());
 console.log("Tipo original:", typeof number);
 console.log("Tipo após conversão:", typeof number.toString());
 
-// ---------------------------------------
 //  BOOLEANOS
-// ---------------------------------------
-
 console.log(2 == 2);  // true
 console.log(2 == 3);  // false
 
-// ---------------------------------------
+
 //  NULL & UNDEFINED
-// ---------------------------------------
 
 // `null` → representa ausência de valor (vazio)
 const x = null;

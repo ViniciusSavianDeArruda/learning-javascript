@@ -1,5 +1,4 @@
 // Aula 07 — Estruturas de Repetição (Loops)
-// ------------------------------------------
 // Nesta aula, aprendemos as principais formas de repetir ações no JavaScript:
 // - for
 // - while
@@ -9,9 +8,7 @@
 
 window.console.log("Eu sou o console!");
 
-// ---------------------------------------
 // FOR
-// ---------------------------------------
 // O loop `for` é usado quando sabemos quantas vezes queremos repetir o código.
 // Ele possui três partes:
 // 1. inicialização
@@ -27,9 +24,7 @@ for (let index = 0; index <= 10; index++) {
     console.log(index);
 }
 
-// ---------------------------------------
 // FOR COM LISTAS (ARRAYS)
-// ---------------------------------------
 
 const cars = ["Ferrari", "Tesla", "Mercedes"];
 
@@ -38,9 +33,7 @@ for (let i = 0; i < cars.length; i++) {
     console.log(cars[i]);
 }
 
-// ---------------------------------------
 // FOR...OF
-// ---------------------------------------
 // O `for...of` é uma forma mais simples de percorrer listas.
 // Ele pega diretamente cada elemento do array sem precisar usar índices.
 
@@ -48,9 +41,7 @@ for (let car of cars) {
     console.log(car);
 }
 
-// ---------------------------------------
 // forEach()
-// ---------------------------------------
 // O método `forEach()` executa uma função para cada elemento do array.
 // É uma forma moderna e muito usada em JavaScript.
 
@@ -59,9 +50,7 @@ cars.forEach(function (car, index) {
     console.log(car);   // mostra o valor do item
 });
 
-// ---------------------------------------
 // WHILE
-// ---------------------------------------
 // O loop `while` repete o código enquanto a condição for verdadeira.
 // É útil quando não sabemos exatamente quantas repetições serão necessárias.
 
@@ -72,9 +61,7 @@ while (index < 10) {
     index++; // incrementa o valor para evitar loop infinito
 }
 
-// ---------------------------------------
 // FOR...IN
-// ---------------------------------------
 // O `for...in` é usado principalmente para percorrer as propriedades de um objeto.
 
 const person = {

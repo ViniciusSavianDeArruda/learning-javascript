@@ -1,43 +1,43 @@
-# 🚀 Guia de Estudos em JavaScript
+# Guia de Estudos em JavaScript
 
 *Este repositório é baseado em estudos realizados a partir de cursos e materiais de aprendizado em JavaScript.  
 Todo o conteúdo foi reescrito, comentado e adaptado por mim para fins de estudo pessoal, Vou atualizando este guia conforme aprendo coisas novas.*
 
 ---
 
-## 🧭 Sumário
+## Sumário
 
-- [1. Interação com o Usuário](#-1-interação-com-o-usuário)
-- [2. Variáveis e Tipos de Dados](#-2-variáveis-e-tipos-de-dados)
-- [3. Conversão de Dados](#-3-conversão-de-dados)
-- [4. Estruturas Condicionais](#-4-estruturas-condicionais)
-- [5. Valores Truthy e Falsy](#-5-valores-truthy-e-falsy)
-- [6. Precedência de Operadores](#-6-precedência-de-operadores)
-- [7. Estruturas de Repetição](#-7-estruturas-de-repetição)
-- [8. Arrays](#-8-arrays)
-- [9. Métodos Modernos de Arrays](#-9-métodos-modernos-de-arrays)
-- [10. Funções](#-10-funções)
-- [11. Classes e Herança](#-11-classes-e-herança)
-- [12. Tipos de Dados (Referência vs Primitivo)](#-12-tipos-de-dados-referência-vs-primitivo)
-- [13. Objetos](#-13-objetos)
-- [14. JSON](#-14-json)
-- [15. Spread Operator](#-15-spread-operator-)
-- [16. Módulos (Import / Export)](#-16-módulos-import--export)
-- [17. Manipulação do DOM](#-17-manipulação-do-dom)
-- [18. Selecionando Elementos do DOM](#-18-selecionando-elementos-do-dom)
-- [19. Manipulando Elementos do DOM](#-19-manipulando-elementos-do-dom)
-- [20. Eventos no DOM](#-20-eventos-no-dom)
-- [21. Resumo Geral](#-21-resumo-geral)
-- [Autor](#-autor)
+- [1. Interação com o Usuário](#1-interação-com-o-usuário)
+- [2. Variáveis e Tipos de Dados](#2-variáveis-e-tipos-de-dados)
+- [3. Conversão de Dados](#3-conversão-de-dados)
+- [4. Estruturas Condicionais](#4-estruturas-condicionais)
+- [5. Valores Truthy e Falsy](#5-valores-truthy-e-falsy)
+- [6. Precedência de Operadores](#6-precedência-de-operadores)
+- [7. Estruturas de Repetição](#7-estruturas-de-repetição)
+- [8. Arrays](#8-arrays)
+- [9. Métodos Modernos de Arrays](#9-métodos-modernos-de-arrays)
+- [10. Funções](#10-funções)
+- [11. Classes e Herança](#11-classes-e-herança)
+- [12. Tipos de Dados (Referência vs Primitivo)](#12-tipos-de-dados-referência-vs-primitivo)
+- [13. Objetos](#13-objetos)
+- [14. JSON](#14-json)
+- [15. Spread Operator](#15-spread-operator-)
+- [16. Módulos (Import / Export)](#16-módulos-import--export)
+- [17. Manipulação do DOM](#17-manipulação-do-dom)
+- [18. Selecionando Elementos do DOM](#18-selecionando-elementos-do-dom)
+- [19. Manipulando Elementos do DOM](#19-manipulando-elementos-do-dom)
+- [20. Eventos no DOM](#20-eventos-no-dom)
+- [21. Resumo Geral](#21-resumo-geral)
+- [Autor](#autor)
 
 ---
 
-## 🧩 1. Interação com o Usuário
+## 1. Interação com o Usuário
 
-### 📖 O que é
+### O que é
 JavaScript permite interagir com o usuário diretamente no navegador, pedindo dados e exibindo mensagens — útil para testes rápidos e exercícios iniciais.
 
-### 💻 Métodos principais
+### Métodos principais
 - `window.prompt()` → abre uma caixa para o usuário digitar algo
 - `alert()` → exibe uma mensagem simples
 - `console.log()` → exibe informações no console do navegador
@@ -49,27 +49,27 @@ alert("Bem-vindo ao curso de JavaScript, " + nome + "!");
 window.console.log("Eu sou o console!");
 ```
 
-> 📌 Tudo que vem do `prompt()` é string, mesmo que pareça número.
+> Tudo que vem do `prompt()` é string, mesmo que pareça número.
 
 ---
 
-## 🔤 2. Variáveis e Tipos de Dados
+## 2. Variáveis e Tipos de Dados
 
-### 📖 const vs let
+### const vs let
 - `const` → para valores que **não mudam**
 - `let` → para valores que **podem ser alterados**
 
 ```js
 // const não pode ser reatribuído:
 // const message = 'Hello world!'
-// message = 'Olá mundo!' // ❌ erro!
+// message = 'Olá mundo!' // erro!
 
 // let pode ser reatribuído:
 let message = 'Hello world';
 message = 'Olá mundo!';
 ```
 
-### 🔡 Strings e seus métodos
+### Strings e seus métodos
 
 ```js
 const greeting = 'Hello world!';
@@ -90,7 +90,7 @@ console.log(nomes.split(","));   // ["Ana", "Julia", "Bruna"]
 console.log("Maria".split("")); // ["M","a","r","i","a"]
 ```
 
-### 🔢 Números
+### Números
 
 ```js
 const number = 5;
@@ -100,7 +100,7 @@ console.log(typeof number);       // "number"
 console.log(typeof number.toString()); // "string"
 ```
 
-### ⚡ typeof
+### typeof
 
 O operador `typeof` revela o tipo de qualquer valor:
 
@@ -114,9 +114,9 @@ console.log(typeof null);       // object (particularidade do JS)
 
 ---
 
-## 🔢 3. Conversão de Dados
+## 3. Conversão de Dados
 
-### 📖 Por que converter
+### Por que converter
 Quando pegamos entrada do usuário via `prompt()`, ela sempre chega como string. Para fazer cálculos, precisamos converter para número.
 
 ```js
@@ -134,9 +134,9 @@ alert(`A soma é ${n1 + n2}`);
 
 ---
 
-## ⚙️ 4. Estruturas Condicionais
+## 4. Estruturas Condicionais
 
-### 📖 if / else if / else
+### if / else if / else
 
 ```js
 if (num1 > num2) {
@@ -148,9 +148,9 @@ if (num1 > num2) {
 }
 ```
 
-> 📌 Prefira `===` ao `==` — ele verifica **valor e tipo** ao mesmo tempo.
+> Prefira `===` ao `==` — ele verifica **valor e tipo** ao mesmo tempo.
 
-### ⚖️ Operadores de Comparação
+### Operadores de Comparação
 
 | Símbolo | Significado | Exemplo | Resultado |
 |---------|-------------|---------|-----------|
@@ -160,7 +160,7 @@ if (num1 > num2) {
 | `===` | Igual (valor e tipo) | `'5' === 5` | `false` |
 | `!=` | Diferente | `10 != 5` | `true` |
 
-### 🔗 Operadores Lógicos
+### Operadores Lógicos
 
 ```js
 const sum1 = 2 + 2; // 4
@@ -173,11 +173,11 @@ if (sum1 === 4 && sum2 === 6) {
 
 // || → verdadeiro se PELO MENOS uma condição for verdadeira
 if (sum1 === 4 || sum2 === 6) {
-  console.log("sum1 is 4 or sum2 is 6"); // ✅ executado
+  console.log("sum1 is 4 or sum2 is 6"); // executado
 }
 ```
 
-### ❓ Operador Ternário
+### Operador Ternário
 
 Forma curta de escrever um `if/else` simples:
 
@@ -193,7 +193,7 @@ let result2 = sum === 2 ? 2 : 4;
 console.log(result2); // 4
 ```
 
-### 🔀 Switch
+### Switch
 
 Útil para múltiplas condições baseadas em igualdade:
 
@@ -208,7 +208,7 @@ switch (car) {
     console.log("Ferrari is very red");
     break;
   case "Tesla":
-    console.log("Tesla is very smart"); // ✅ executado
+    console.log("Tesla is very smart"); // executado
     break;
   default:
     console.log("Unknown car");
@@ -218,12 +218,12 @@ switch (car) {
 
 ---
 
-## 💡 5. Valores Truthy e Falsy
+## 5. Valores Truthy e Falsy
 
-### 📖 Conceito
+### Conceito
 O JavaScript converte automaticamente valores para `true` ou `false` quando usados em condições. O operador `!!` força essa conversão explicitamente.
 
-### ❌ Valores Falsy (interpretados como false)
+### Valores Falsy (interpretados como false)
 
 ```js
 console.log(!!false);     // false
@@ -234,7 +234,7 @@ console.log(!!undefined); // false
 console.log(!!NaN);       // false
 ```
 
-### ✅ Valores Truthy (todo o resto)
+### Valores Truthy (todo o resto)
 
 ```js
 const list   = [];  // lista vazia → truthy!
@@ -254,7 +254,7 @@ if (list.length > 0) {
 
 ---
 
-## ➗ 6. Precedência de Operadores
+## 6. Precedência de Operadores
 
 Ordem em que o JavaScript resolve operações (do mais para o menos prioritário):
 
@@ -271,18 +271,18 @@ Ordem em que o JavaScript resolve operações (do mais para o menos prioritário
 
 ---
 
-## 🔁 7. Estruturas de Repetição
+## 7. Estruturas de Repetição
 
 | Estrutura | Quando usar | Executa ao menos uma vez? |
 |-----------|-------------|--------------------------|
-| `for` | Quando sabemos o nº de repetições | ❌ |
-| `while` | Enquanto a condição for verdadeira | ❌ |
-| `do...while` | Executa uma vez antes de verificar | ✅ |
-| `for...of` | Percorrer arrays (forma simples) | ❌ |
-| `for...in` | Percorrer propriedades de objetos | ❌ |
-| `forEach()` | Percorrer arrays com função | ❌ |
+| `for` | Quando sabemos o nº de repetições | Não |
+| `while` | Enquanto a condição for verdadeira | Não |
+| `do...while` | Executa uma vez antes de verificar | Sim |
+| `for...of` | Percorrer arrays (forma simples) | Não |
+| `for...in` | Percorrer propriedades de objetos | Não |
+| `forEach()` | Percorrer arrays com função | Não |
 
-### 💻 Exemplos
+### Exemplos
 
 ```js
 const cars = ["Ferrari", "Tesla", "Mercedes"];
@@ -319,9 +319,9 @@ for (let property in person) {
 
 ---
 
-## 📦 8. Arrays
+## 8. Arrays
 
-### 📖 O básico
+### O básico
 Arrays guardam vários valores em uma única variável. Os índices começam em 0.
 
 ```js
@@ -329,7 +329,7 @@ const names = ["Maria", "Francisca", "Joana", 10, false];
 console.log(names[1]); // Francisca
 ```
 
-### 🛠️ Métodos essenciais
+### Métodos essenciais
 
 | Método | O que faz |
 |--------|-----------|
@@ -357,7 +357,7 @@ console.log(sorted);
 
 ---
 
-## 🧩 9. Métodos Modernos de Arrays
+## 9. Métodos Modernos de Arrays
 
 ### `.map()` — transforma cada item e retorna um **novo array**
 
@@ -398,13 +398,13 @@ console.log(startAt100); // 240
 [1, 2, 3].forEach(n => console.log(n));
 ```
 
-> 📌 `.map()` e `.filter()` sempre retornam um **novo array**. `.forEach()` e `.reduce()` não.
+> `.map()` e `.filter()` sempre retornam um **novo array**. `.forEach()` e `.reduce()` não.
 
 ---
 
-## 🧮 10. Funções
+## 10. Funções
 
-### 📖 Conceito
+### Conceito
 Funções são blocos reutilizáveis que recebem parâmetros e podem retornar valores.
 
 ### 1) Função tradicional
@@ -469,9 +469,9 @@ function fatorial(n) {
 
 ---
 
-## 🏛️ 11. Classes e Herança
+## 11. Classes e Herança
 
-### 📖 O que são
+### O que são
 Classes são **moldes** para criar objetos com propriedades e métodos. O método `constructor()` é chamado automaticamente ao criar uma nova instância.
 
 ### 1) Criando uma classe
@@ -532,7 +532,7 @@ dog.speak(); // Claus barked!
 
 ---
 
-## 🧠 12. Tipos de Dados (Referência vs Primitivo)
+## 12. Tipos de Dados (Referência vs Primitivo)
 
 ### Primitivos — guardam o valor diretamente
 
@@ -558,9 +558,9 @@ let arr3 = [...arr1];  // cópia independente
 
 ---
 
-## 👤 13. Objetos
+## 13. Objetos
 
-### 📖 Criação e acesso
+### Criação e acesso
 
 ```js
 const person = {
@@ -615,9 +615,9 @@ console.log(todos[2].description); // "Treinar"
 
 ---
 
-## 🗂️ 14. JSON
+## 14. JSON
 
-### 📖 O que é
+### O que é
 JSON (JavaScript Object Notation) é o formato padrão para **troca de dados** entre sistemas (APIs, front-end e back-end). É sempre representado como uma **string**.
 
 ```js
@@ -642,9 +642,9 @@ console.log(todosList); // array de objetos novamente
 
 ---
 
-## 🌈 15. Spread Operator (...)
+## 15. Spread Operator (...)
 
-### 📖 Para que usar
+### Para que usar
 Copia arrays e objetos sem alterar o original, evitando mutações indesejadas.
 
 ```js
@@ -662,9 +662,9 @@ console.log(novo); // { nome: "Ana", idade: 20, cidade: "RS" }
 
 ---
 
-## 📦 16. Módulos (Import / Export)
+## 16. Módulos (Import / Export)
 
-### 📖 Por que dividir
+### Por que dividir
 Módulos organizam o código em arquivos menores e reutilizáveis — muito usado em projetos React e Node.
 
 ```js
@@ -681,9 +681,9 @@ console.log(saudacao("Vinicius")); // Olá, Vinicius!
 
 ---
 
-## 🧱 17. Manipulação do DOM
+## 17. Manipulação do DOM
 
-### 📖 O que é
+### O que é
 O DOM (Document Object Model) é a representação da página HTML. Com JavaScript podemos acessar elementos, alterar conteúdo, aplicar estilos e responder a eventos.
 
 ```html
@@ -700,7 +700,7 @@ O DOM (Document Object Model) é a representação da página HTML. Com JavaScri
 
 ---
 
-## 🔎 18. Selecionando Elementos do DOM
+## 18. Selecionando Elementos do DOM
 
 | Método | O que retorna | Tipo | Quando usar |
 |--------|--------------|------|-------------|
@@ -711,7 +711,7 @@ O DOM (Document Object Model) é a representação da página HTML. Com JavaScri
 | `querySelectorAll(seletor)` | Todos que casarem | `NodeList` | Busca com CSS |
 | `getElementsByName(name)` | Vários por name | `NodeList` | Formulários |
 
-### 💻 Exemplos práticos
+### Exemplos práticos
 
 ```js
 // Por ID
@@ -743,7 +743,7 @@ campos[0].value = "vinicius";
 
 ---
 
-## ✏️ 19. Manipulando Elementos do DOM
+## 19. Manipulando Elementos do DOM
 
 ```js
 const items = document.querySelector(".items");
@@ -767,9 +767,9 @@ button.style.color = "blue";
 
 ---
 
-## 🎯 20. Eventos no DOM
+## 20. Eventos no DOM
 
-### 📖 O que são
+### O que são
 Eventos são ações do usuário (clique, digitação, envio de formulário...) que o JavaScript pode "ouvir" com `addEventListener()`.
 
 ```js
@@ -807,11 +807,11 @@ nameInput.addEventListener("change", function(e) {
 });
 ```
 
-> 📌 Estrutura base: `elemento.addEventListener('evento', função)`
+> Estrutura base: `elemento.addEventListener('evento', função)`
 
 ---
 
-## ✅ 21. Resumo Geral
+## 21. Resumo Geral
 
 O que aprendi e considero importante:
 
@@ -844,8 +844,8 @@ O que aprendi e considero importante:
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 **Vinicius Arruda**  
 Estudante de Sistemas de Informação — UFN  
-📅 Última atualização: Abril de 2026
+Última atualização: Abril de 2026
