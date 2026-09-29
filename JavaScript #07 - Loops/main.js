@@ -78,3 +78,10 @@ for (let property in person) {
 for (let property in person) {
     console.log(person[property]); // Jane, 21
 }
+
+
+const materias = ["JavaScript", "React", "Node"];
+
+for (const materia of materias) {
+    console.log(materias)
+}

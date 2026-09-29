@@ -52,3 +52,10 @@ const sumArrow2 = (a, b = 10) => a + b;
 
 const sumValueArrow = sumArrow2(2);
 console.log(sumValueArrow); // 12
+
+
+//arraw function usando retorno implicido sem chaves
+const ehMaiorDeIdade = (idade) => idade >= 18;
+
+console.log(ehMaiorDeIdade(20));
+console.log(ehMaiorDeIdade(17));
